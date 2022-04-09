@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<form>
+<label for='fname'>Frist Name</label><br>
+<input type='text' id='fname' name='fname'><br>
+<label for='lname'> Last Name</label><br>
+<input type='text' id='lname' name='lname' >
+
+
+</form>
+<p>Choose your favorite Web language:</p>
+
+<form>
+<input type='radio' id='html' name='fav_language' value='HTML'>
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+</form>
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+<form action="/action_page.php"'>
+<label for='firstName'>First Name</label><br>
+<input type='text' id='firstName' name='firstName'><br>
+<label for='lastNmae'>Last Name </label><br>
+<input type='text' id='lastNmae' name='lastName'><br><br>
+<input type='button' value='Submit'>
+
+</form>
+<form action="/action_page.php">
+  <label for="fname" placeholder='e'>First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<label for='language'> Chose the Programing Language</label>
+<select id='language' name='language' >
+<option value='Python'>Python</option>
+<option value='JavaScript' selected>JavaScript</option>
+
+</select>
+<button type='button' onclick='alert("Hellow World")'>Click Me</button>
+<br>
+<form>
+<fieldset>
+<legend> Personal Details</legend>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br>
+  <input type='radio' id='html' name='fav_language' value='HTML'>
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <label for='fname'>Frist Name</label><br>
+  <input type='text' id='fname' name='fname'><br>
+  <label for='lname'> Last Name</label><br>
+  <input type='text' id='lname' name='lname' ><br><br>
+  <input type="submit" value="Submit">
+
+
+</fieldset>
+
+</form>
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <label for='dateOfBirth'>Date Of Birth</label><br>
+  <input type="datetime-local" id='dateOfBirth' name='dateOfBirth'><br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" step='10' value='30'>
+</form>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<form>
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+<video width='300px' height='200px' controls>
+<source src='movie.mp4' type='video/mp4'>
+Video is not avelabel
+</video>
+
+</body>
+
+</html>
