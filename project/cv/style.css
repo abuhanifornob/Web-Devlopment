@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+#container {
+    background-color: aquamarine;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contain {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.b-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.cv-name {
+    padding: 20px;
+    float: left;
+}
+
+.contact-info {
+    float: right;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+.div-clear {
+    clear: both;
+}
+
+.hrline {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.section-left {
+    width: 25%;
+    float: left;
+}
+
+.section-right {
+    width: 75%;
+    float: left;
+}
+
+.skil-list li {
+    list-style-type: none;
+}
+
+.cours-list li {
+    list-style-type: lower-roman;
+}
+
+.mondol h2 {
+    text-decoration: underline;
+}
+
+.asrotex h2 {
+    text-decoration: underline;
+}
+
+.Bsc-left {
+    float: left;
+}
+
+.dip-right {
+    float: right;
+    padding-right: 20px;
+}
+
+.bottom-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.bottom-container a {
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.bottom-container p {
+    padding-top: 20px;
+}
