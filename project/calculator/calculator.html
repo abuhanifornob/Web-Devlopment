@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+       *{
+           padding: 0;
+           margin: 0;
+
+        }
+        .calculator-content{
+            width: 300px;
+            background-color: aqua;
+            margin: 0 auto;
+            position: relative;
+        }
+        .calculator{
+
+        }
+        .cal-title{
+            font-weight: bold;
+            text-align: center;
+        }
+        .screen{
+            padding: 10px;
+            font-size:22.70px;
+            margin: 0 auto;
+            text-align: right;
+            
+        }
+        .cal-body{
+            background-color: gray;
+            display: flex;
+            position: absolute;
+            flex-wrap: wrap;
+            
+        }
+        .cal-body>div{
+            padding:29px;
+            width: 13px;
+            height: 10px;
+
+            margin:2px;
+            background-color: black;
+            color: white;
+        }
+       .equal{
+           background-color: aqua;
+       }
+       .cal-body>div:hover{
+           box-shadow: 2px 2px 3px wheat;
+           background-color: aliceblue;
+           color: black;
+           
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="calculator-content">
+    <div class="">
+        <div class="cal-title">
+          <h1>Calculator</h1>
+        </div>
+        <div class="cal-screen">
+            <input class='screen' type="text">
+
+        </div>
+        <div class="cal-body">
+            <div>C</div>
+            <div>+/-</div>
+            <div>%</div>
+            <div style="background-color: blueviolet;">/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div style="background-color: blueviolet;">x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div style="background-color: blueviolet;">-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div style="background-color: blueviolet;">+</div>
+            <div>0</div>
+            <div>. </div>
+            <div>DEL</div>
+            <div class="equal" style="background-color: aqua;">=</div>
+
+           
+        </div>
+
+    </div>
+   </div>
+    
+    
+</body>
+</html>
