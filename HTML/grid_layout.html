@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       .body-container{
+           height: 100vh;
+           background-color: brown;
+           display: grid;
+           grid-template-areas: 
+           'h'
+           'm'
+           'm'
+           'm'
+           'f'
+           ;
+       }
+       header{
+          grid-area: h;
+          background-color: aliceblue;
+          height: 100%;
+       }
+       main{
+            grid-area: m;
+            background-color:palegreen;
+            height: 100%;
+            width: 100%;
+       }
+       article{
+           display: grid;
+           grid-template-areas:
+           's1 a1'
+           's2 a2'
+           's3 .'
+           ;
+
+
+       }
+       section{
+           background-color: aliceblue;
+           width: 100%;
+           height: 100%;
+           border: 1px solid red;
+
+       }
+       aside{
+          background-color:aqua;
+           width: 100%;
+           height: 100%;
+           border: 1px solid red;
+
+       }
+       footer{
+           grid-area: f;
+           background-color:peru;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            'n1 n2'
+            ;
+            background-color:gray;
+            border: 1px solid red;
+            margin: 5px;
+           
+       }
+       .section1{grid-area: s1;}
+       .section2{grid-area: s2;}
+       .section3{grid-area: s3;}
+       .aside1{grid-area: a1;}
+       .aside2{grid-area: a2;}
+       .nav1{grid-area: n1;}
+       .nav2{grid-area: n2;}
+
+    </style>
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <nav class="header1">Header</nav>
+        </header>
+        <main> 
+            <article>
+                <section class="section1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rem, ex alias blanditiis at eveniet quam vero harum ut labore non saepe ducimus necessitatibus dolorem qui itaque provident fugit modi nisi atque. Odio fuga atque repellat, obcaecati, quod quos ut molestiae at ipsum, voluptates minima voluptatibus. Debitis nam, omnis deleniti dolorum aspernatur tempore. Distinctio repudiandae possimus eligendi vitae velit, quae, quam, blanditiis eos facilis voluptate minus dolorum nihil? Voluptas eum soluta cum sunt blanditiis at magnam laboriosam minus tenetur voluptates quia, praesentium aspernatur libero porro quibusdam! Harum hic quaerat exercitationem necessitatibus dolores, accusamus qui inventore animi iste distinctio soluta laboriosam.</p></section>
+                <section class="section2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consequatur est doloribus, aperiam exercitationem possimus amet rerum, aut veniam earum fugit aliquam libero ut laborum quos odit minus sunt in, molestiae mollitia distinctio eligendi laudantium! Impedit debitis enim rem consequuntur incidunt. Debitis maiores quidem, exercitationem dolorem est aliquam dolores provident voluptatem blanditiis praesentium explicabo voluptate culpa labore voluptas, possimus non perspiciatis laborum ipsam quia earum quo quaerat! Tenetur fuga reiciendis blanditiis dicta ut sint voluptatem quasi consequatur? Pariatur, ab commodi facere porro recusandae animi ipsum nostrum, ratione corrupti, repellat consectetur totam veniam impedit dolorem autem temporibus quisquam. Veniam, sequi. Aperiam!</section>
+                <section class="section3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa minus ea modi assumenda inventore sit ut totam molestiae asperiores? Est illum quos fugiat totam molestiae asperiores, reprehenderit, in libero quas repudiandae ducimus odit veniam? Optio exercitationem voluptatum aspernatur unde dolor, accusantium in blanditiis? Maiores, corrupti? Sapiente nostrum minima nemo omnis aliquam magni quibusdam aspernatur, aliquid accusamus ullam vitae quae eum architecto, laudantium hic sed! Incidunt nobis in ea, aliquid alias sit commodi dolore recusandae itaque sequi quo modi minima enim omnis corporis voluptatibus quas at molestiae fugiat qui, rerum adipisci, eos error? Quas dolorum doloribus eveniet consequatur blanditiis culpa.</section>
+                <aside class="aside1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum tenetur accusamus quidem in minus sint modi, reprehenderit ipsa nulla voluptas, repudiandae dolor incidunt iusto, reiciendis harum vel tempora cupiditate veniam deserunt officia eveniet placeat aliquid! Similique, itaque quis. Harum, aliquid id placeat ea fugiat veniam saepe sequi expedita eos ut unde doloribus qui. Sequi laudantium sed et tempora deleniti repudiandae exercitationem aut quia sint. Aspernatur numquam similique error sit sequi commodi eos nostrum nemo veniam, modi quia at, iste adipisci facere sed? Provident accusamus enim veritatis fugit nostrum iure ad hic quos accusantium reiciendis, aspernatur nesciunt blanditiis pariatur corporis!</aside> 
+                <aside class="aside2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates sint, officia, delectus mollitia pariatur quos soluta consectetur atque quisquam cum explicabo harum eaque perferendis eum ex minus hic fugit. Nemo quidem neque sapiente, omnis aliquid suscipit nesciunt veritatis rem molestiae voluptas dolor harum deleniti nostrum illum nisi beatae? Temporibus laboriosam praesentium iusto consectetur obcaecati ut veniam dicta iure reiciendis, voluptates corporis, ex nemo alias dignissimos excepturi sit in, possimus doloremque. Necessitatibus consequuntur recusandae sapiente repellendus ipsa ut expedita rem autem quaerat sed, molestias aliquam delectus magni itaque at magnam maxime maiores accusantium quasi voluptate placeat doloremque in! Eaque, illum.</aside>     
+            </article>
+        </main>
+        
+        <footer>
+            <nav class="nav1">nav1</nav>
+            <nav class="nav2">nav2</nav>
+           
+        </footer>
+    </div>
+    
+</body>
+</html>

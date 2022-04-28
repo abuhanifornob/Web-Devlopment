@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navigation_bar{
+            margin-top: 10px;
+            overflow: hidden;
+            background-color:gold;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .navigation_bar ul{
+                       
+        }
+        .navigation_bar ul li{
+            float: left;
+            list-style-type: none;
+            padding: 15px;
+            border-right: 1px solid red;
+            
+        }
+        .navigation_bar ul li.right_item{
+            float: right;
+            list-style-type: none;
+            padding: 15px;
+        }
+        .navigation_bar ul li a{
+            text-decoration: none;
+        }
+        .navigation_bar ul li:hover{
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .articel{
+            width: 45%;
+            background-color: beige;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: justify;
+     
+
+        }
+        .articel2{
+            width: 45%;
+            float: left;
+            background-color: rgb(85, 85, 23);
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: justify;
+         
+
+        }
+        #para{
+            margin-top: 10px;
+        }
+        #vartical{
+            background-color: aqua;
+            width: 10%;
+            float: left;
+            background-attachment: fixed;
+            height:1000px;
+        }
+        #vartical ul{}
+        #vartical ul li{
+            list-style-type: none;
+            padding:10px ;
+        }
+        #vartical ul li a{
+            text-decoration:none;
+        }
+        #vartical ul li:hover{
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navigation_bar">
+        <ul>
+            <li><a href="">Hobe</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li class="right_item">Login<a href=""></a></li>
+            <li class="right_item"><input type="text"></li>
+           
+
+        </ul>
+        </div>
+        <div id="vartical">
+            <ul>
+                <li><a href="">Hobe</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                
+               
+    
+            </ul>
+    </div>
+        
+    <div id="para">
+        <div class="articel">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga modi quos suscipit ipsum vel quo, totam rem facilis quia illum accusamus maxime libero officia facere id expedita saepe magnam quae beatae ratione. Temporibus ullam ipsum eaque facere suscipit voluptatem aperiam cupiditate ipsam, assumenda quaerat earum nulla hic a qui nobis quisquam. Vero saepe voluptas distinctio libero. Modi ducimus aperiam in, architecto dolorum ipsum eos amet placeat ipsa eaque quis! Inventore, doloribus debitis quis ab repudiandae et nisi in voluptatem nostrum ad laudantium dignissimos provident ratione! Id dolor, delectus exercitationem eum deserunt cum placeat minima perferendis architecto eos, tenetur facilis.</p>
+        </div>
+        <div class="articel2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fuga modi quos suscipit ipsum vel quo, totam rem facilis quia illum accusamus maxime libero officia facere id expedita saepe magnam quae beatae ratione. Temporibus ullam ipsum eaque facere suscipit voluptatem aperiam cupiditate ipsam, assumenda quaerat earum nulla hic a qui nobis quisquam. Vero saepe voluptas distinctio libero. Modi ducimus aperiam in, architecto dolorum ipsum eos amet placeat ipsa eaque quis! Inventore, doloribus debitis quis ab repudiandae et nisi in voluptatem nostrum ad laudantium dignissimos provident ratione! Id dolor, delectus exercitationem eum deserunt cum placeat minima perferendis architecto eos, tenetur facilis.</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
