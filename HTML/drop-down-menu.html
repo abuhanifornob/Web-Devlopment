@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        .navbar {
+            background-color: #18191A;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .navbar a {
+            color: wheat;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        
+        .dropdown-container {
+            display: inline;
+            position: relative;
+        }
+        
+        .dropdown-content {
+            background-color: grey;
+            min-width: 100px;
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+        
+        .dropdown-content a {
+            display: block;
+        }
+        
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+            border-radius: 20px;
+        }
+        
+        .dropdown-content :hover {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+        
+        .dropdown-container-sub {
+            position: relative;
+        }
+        
+        .dropdown-container-sub:hover .dropdown-content-sub {
+            display: inline-block;
+        }
+        
+        .dropdown-content-sub {
+            background-color: black;
+            color: wheat;
+            min-width: 100px;
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+        
+        .dropdown-content-sub:hover {
+            background-color: black;
+            color: wheat;
+            display: inline;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown-container">
+            <a href="#">Tutorial</a>
+            <div class="dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">BootStrap</a>
+                <a href="#">Java Script</a>
+                <a href="#">MongoBD</a>
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <a href="#">Contact</a>
+            <div class="dropdown-content">
+                <div class="dropdown-container-sub">
+                    <a href="#">Phone</a>
+                    <div class="dropdown-content-sub">
+                        <a href="#">+8801716203929</a>
+                        <a href="#">+8801716203929</a>
+                        <a href="#">+8801716203929</a>
+                    </div>
+                </div>
+
+                <a href="#">Facebook</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+
+    </div>
+
+</body>
+
+</html>
