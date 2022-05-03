@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation bar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .navbar {
+        background-color: lightslategrey;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: larger;
+    }
+    
+    .navbar a:hover {
+        background-color: wheat;
+    }
+    
+    @media screen and (max-width: 992px) {
+        .navbar {
+            background-color: indigo;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .navbar {
+            flex-direction: column;
+        }
+        .navbar a {
+            border: 5px solid;
+            margin: 0 10px;
+            text-align: center;
+            border-radius: ;
+        }
+        .navbar a:hover {}
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Paper</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+
+</body>
+
+</html>

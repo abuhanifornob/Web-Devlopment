@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Repsponsive Grid View</title>
+    <style>
+            * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+            .col-s-2 {
+                width: 16.66%;
+            }
+            .col-s-3 {
+                width: 25%;
+            }
+            .col-s-4 {
+                width: 33.33%;
+            }
+            .col-s-5 {
+                width: 41.66%;
+            }
+            .col-s-6 {
+                width: 50%;
+            }
+            .col-s-7 {
+                width: 58.33%;
+            }
+            .col-s-8 {
+                width: 66.66%;
+            }
+            .col-s-9 {
+                width: 75%;
+            }
+            .col-s-10 {
+                width: 83.33%;
+            }
+            .col-s-11 {
+                width: 91.66%;
+            }
+            .col-s-12 {
+                width: 100%;
+            }
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {
+                    width: 8.33%;
+                }
+                .col-2 {
+                    width: 16.66%;
+                }
+                .col-3 {
+                    width: 25%;
+                }
+                .col-4 {
+                    width: 33.33%;
+                }
+                .col-5 {
+                    width: 41.66%;
+                }
+                .col-6 {
+                    width: 50%;
+                }
+                .col-7 {
+                    width: 58.33%;
+                }
+                .col-8 {
+                    width: 66.66%;
+                }
+                .col-9 {
+                    width: 75%;
+                }
+                .col-10 {
+                    width: 83.33%;
+                }
+                .col-11 {
+                    width: 91.66%;
+                }
+                .col-12 {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width:599px) {
+                [class*='col-'] {
+                    width: 100%;
+                }
+            }
+            [class*='col-'] {
+                float: left;
+                padding: 10px;
+            }
+            .header {
+                background-color: darkolivegreen;
+                padding: 20px;
+                text-align: center;
+            }
+            .navbar {
+                background-color: darkgray;
+            }
+            .navbar a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+            .navbar a:hover {
+                cursor: pointer;
+                background-color: wheat;
+                color: black;
+                border-radius: 10px;
+            }
+            .main {
+                background-color: cornflowerblue;
+            }
+            .footer {
+                background-color: black;
+                color: wheat;
+                padding: 10px;
+                text-align: center;
+            }
+            .clear-section {
+                clear: both;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Abu Hanif</h1>
+    </div>
+    <div class="row">
+        <div class="navbar col-2" style="height:auto;">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">contact</a>
+            <a href="#">About</a>
+        </div>
+        <div class="main col-7">
+            <h1 style="text-align: center;">I am Web Designer</h1>
+            <p style="text-align: justify; border: 1px solid red; padding: 5px; background-color: azure; border-radius: 4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore ipsam blanditiis eos temporibus voluptate fugit provident fuga, consequatur, numquam eius vitae laborum minus laudantium, facere alias suscipit minima iure repellat
+                nobis explicabo nihil repudiandae aspernatur? Blanditiis accusantium quod perferendis, quidem molestias, omnis iusto aut numquam ex, natus dolor facilis! At quam consectetur ex a aliquam dolore corrupti provident hic. Natus eveniet accusantium
+                nam mollitia quae! Voluptates ex quaerat ipsum atque, aliquid at hic cumque dolor reiciendis voluptate quasi? Veritatis magnam odit saepe numquam deserunt voluptatum facilis adipisci quo, necessitatibus pariatur voluptas cupiditate qui.
+                Esse, praesentium. Error, odit architecto sapiente soluta provident fugiat cupiditate eum eos sequi facilis hic quibusdam harum quidem voluptatibus enim molestiae? Cupiditate architecto id excepturi vel delectus ipsum numquam atque suscipit
+                ex corrupti laborum incidunt magnam eius tempora provident quaerat distinctio reprehenderit sunt iste, asperiores eos quis placeat. Aperiam perspiciatis temporibus quaerat quidem eveniet eius nobis animi autem rerum corrupti aut at, totam
+                a neque exercitationem saepe omnis ex maiores provident beatae hic necessitatibus quisquam. Debitis laborum, minus corrupti sequi amet, obcaecati, laudantium voluptatibus illum culpa dicta quod alias ab possimus quas ad esse odio nemo
+                aperiam explicabo eum autem neque recusandae omnis? Temporibus, at iure.</p>
+        </div>
+        <div class="aside col-3">
+            <div class="frist">
+                <h1 style="text-align: center;">I Love </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum veniam sit deleniti aut error cum qui accusamus consectetur molestias!</p>
+            </div>
+            <div class="second">
+                <h1 style="text-align: center;">I Love </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum veniam sit deleniti aut error cum qui accusamus consectetur molestias!</p>
+            </div>
+            <div class="third">
+                <h1 style="text-align: center;">I Love </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae earum veniam sit deleniti aut error cum qui accusamus consectetur molestias!</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear-section"></div>
+    <div class="footer">
+        <h2>Abu Hanif</h2>
+    </div>
+
+</body>
+
+</html>
