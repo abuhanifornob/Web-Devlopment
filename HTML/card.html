@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .card {
+        background-color: darkslategray;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 100px;
+        border-radius: 10px;
+    }
+    
+    .header-img {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .header-img>img {
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid wheat;
+    }
+    
+    .header {
+        text-align: center;
+        background-color: aqua;
+        border-radius: 10px;
+        border: 2px solid grey;
+    }
+    
+    .skill {
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    .skill li {
+        list-style-type: none;
+        font-weight: bolder;
+        margin: 25px 0;
+        position: relative;
+    }
+    
+    .skill li::before {
+        content: " ";
+        background-color: wheat;
+        top: calc( 100% + 5px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        position: absolute;
+        border-radius: 100px;
+    }
+    
+    .skill li::after {
+        content: " ";
+        background-color: orangered;
+        top: calc( 100% + 5px);
+        left: 0;
+        width: 10%;
+        height: 15px;
+        position: absolute;
+        border-radius: 100px;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="header-img">
+            <img style="widht:100px; height:100px" src="image/skill.png" alt="skill image">
+
+        </div>
+        <div class="header">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="skill">
+            <ul>
+                <li>HTML</li>
+                <li>css</li>
+                <li>bootstrap</li>
+                <li>Jquary</li>
+                <li>Javascript</li>
+                <li>Mongobd</li>
+                <li>React JS</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
