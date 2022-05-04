@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        border-radius: 50%;
+        border: 5px solid black;
+        position: relative;
+        animation-name: hanif-anim;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+    }
+    
+    @keyframes hanif-anim {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        25% {
+            top: 300px;
+            left: 300px;
+            border-radius: 25%;
+            opacity: 0.75;
+        }
+        50% {
+            top: 300px;
+            left: -300px;
+            opacity: 0.50;
+            border-radius: 35%;
+        }
+        75% {
+            top: 75px;
+            left: -75px;
+            opacity: 0.80;
+            border-radius: 40%;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            border: 5px solid red;
+        }
+    }
+</style>
+
+<body>
+    <img src="image/Hanif.JPG" alt="Abu Hanifs Image">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias officia sunt ratione illum! Libero molestias numquam, nobis ducimus voluptatem voluptas impedit laudantium nostrum ipsam expedita! Velit, ipsum accusantium perferendis sit explicabo
+        neque dolore perspiciatis? Reprehenderit aliquam corrupti ducimus quod vero molestiae adipisci nihil accusamus minus. Tenetur exercitationem dolor, voluptate error excepturi necessitatibus nulla iure eveniet eaque quisquam velit aperiam. Nisi
+        obcaecati quam impedit modi delectus accusantium officiis suscipit eos illo culpa! Quaerat, quibusdam, pariatur voluptate alias ad quae corporis quia eaque aliquid nisi fuga veritatis tenetur soluta. Eius fuga reprehenderit debitis itaque ut reiciendis
+        a soluta consequatur. Suscipit, magnam?</p>
+
+</body>
+
+</html>
